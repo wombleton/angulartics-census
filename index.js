@@ -39,7 +39,7 @@ fs.readdir(root, function (err, files) {
         ];
 
         if (argv.attrcheck) {
-          result.push($this.is(argv.attrcheck) ? 'Y' : 'N');
+          result.push($this.is('[' + argv.attrcheck + ']') ? 'Y' : 'N');
         }
 
         results.push(result);
